@@ -27,7 +27,7 @@ import (
 
 func main() {
 	// Glog requires that /tmp exists.
-	if err := os.MkdirAll("/tmp", 0755); err != nil {
+	if err := os.MkdirAll("/data/hostpath-provisioner", 0755); err != nil {
 		fmt.Fprintf(os.Stderr, "Error creating tmpdir: %v\n", err)
 		os.Exit(1)
 	}
